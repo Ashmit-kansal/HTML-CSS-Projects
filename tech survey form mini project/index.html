@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Tech Survey Form</h1>
+    <p id="description">Tell me what skills are hot in current market</p>
+  </header>
+  <form id="survey-form">
+    <fieldset>
+      <legend>Tell us about yourself</legend>
+      <label id="name-label">Name: <input type="text" id="name" required placeholder="Enter your name"/></label>
+      <label id="email-label">Email: <input type="email" id="email" required placeholder="Enter your email" /></label>
+      <label id="number-label">Number: <input type="number" id="number" required min="1000000000" max="9999999999" placeholder="Enter your number" /></label>
+    </fieldset>
+    <fieldset>
+      <label>Which option describes your role
+        <select id="dropdown" required>
+          <option>Student</option>
+          <option>Part time job</option>
+          <option>Full time job</option>
+          <option>Other</option>
+        </select>
+      </label>
+     </fieldset> 
+     <fieldset>
+      <legend>Would you recommend this survey</legend>
+      <label><input type="radio" value="Ofcourse" name="user-recommend"/>Ofcourse</label>
+      <label><input type="radio" value="Maybe" name="user-recommend" />Maybe</label>
+      <label><input type="radio" value="No" name="user-recommend" />No</label>
+     </fieldset>
+     <fieldset>
+      <legend>What technologies do you prefer</legend>
+      <label><input type="checkbox" value="Web development" /> Web development</label>
+      <label><input type="checkbox" value="Machine learning" /> Machine learning</label>
+      <label><input type="checkbox" value="Cloud computing" /> Cloud computing</label>
+      <label><input type="checkbox" value="Blockchain" /> Blockchain</label>
+      <label><input type="checkbox" value="Cyber security" /> Cyber security</label>
+     </fieldset>
+     <fieldset>
+      <legend>Comment about your preffered technologies</legend>
+      <textarea>Enter your comment...</textarea>
+      <br>
+      <button id="submit">Submit</button>
+     </fieldset>
+  </form>
+</body>
